@@ -1,0 +1,109 @@
+@media (min-width:768px) {
+    body {
+        margin-left: 232px
+    }
+}
+
+.navbar.fixed-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030
+}
+
+@media (min-width:768px) {
+    .navbar.fixed-left {
+        bottom: 0;
+        width: 232px;
+        flex-flow: column nowrap;
+        align-items: flex-start
+    }
+
+    .navbar.fixed-left .navbar-collapse {
+        flex-grow: 0;
+        flex-direction: column;
+        width: 100%
+    }
+
+    .navbar.fixed-left .navbar-collapse .navbar-nav {
+        flex-direction: column;
+        width: 100%
+    }
+
+    .navbar.fixed-left .navbar-collapse .navbar-nav .nav-item {
+        width: 100%
+    }
+
+    .navbar.fixed-left .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
+        top: 0
+    }
+}
+
+@media (min-width:768px) {
+    .navbar.fixed-left {
+        right: auto
+    }
+
+    .navbar.fixed-left .navbar-nav .nav-item .dropdown-toggle:after {
+        border-top: .3em solid transparent;
+        border-left: .3em solid;
+        border-bottom: .3em solid transparent;
+        border-right: none;
+        vertical-align: baseline
+    }
+
+    .navbar.fixed-left .navbar-nav .nav-item .dropdown-menu {
+        left: 100%
+    }
+}
+
+.navbar .metismenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar .metismenu li+li {
+    margin-top: 5px;
+}
+
+.navbar .metismenu li:first-child {
+    margin-top: 5px;
+}
+
+.navbar .metismenu li:last-child {
+    margin-bottom: 5px;
+}
+
+.navbar .metismenu>li {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.navbar .metismenu a {
+    position: relative;
+    display: block;
+    padding: 13px 15px;
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+}
+
+.navbar .metismenu ul a {
+    padding: 10px 15px 10px 30px;
+}
+
+.navbar .metismenu ul ul a {
+    padding: 10px 15px 10px 45px;
+}
+
+.navbar .metismenu a:hover,
+.navbar .metismenu a:focus,
+.navbar .metismenu a:active,
+.navbar .metismenu .mm-active>a {
+    text-decoration: none;
+}
+
+.navbar .metismenu .mm-active>a {
+    border-radius: 3px;
+}

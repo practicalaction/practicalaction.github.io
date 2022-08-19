@@ -1,0 +1,102 @@
+*:root {
+    --pa-font-main: "GellerText-Regular", Serif;
+    --pa-font-header: "Druk Web", sans-serif;
+    --pa-font-header-2: "GellerHeadline-Bold", Serif;
+    --pa-yellow: #ffa600;
+    --pa-pink: #ed6a82;
+    --pa-blue: #1b9cfc;
+    --pa-green: #2ecc71;
+    --pa-red: #e74c3c;
+    --pa-grey: #f3f3f3;
+    --pa-white: #fff;
+    --pa-black: #3c3c3c;
+    --pa-body-1-fontsize: 16px;
+    --pa-body-1-lineheight: 24px;
+    --pa-body-2-fontsize: 18px;
+    --pa-body-2-lineheight: 26px;
+    --pa-caption-fontsize: 14px;
+    --pa-caption-lineheight: 22px;
+    --pa-display-1-fontsize: 20px;
+    --pa-display-1-lineheight: 26px;
+    --pa-display-2-fontsize: 22px;
+    --pa-display-2-lineheight: 26px;
+    --pa-display-3-fontsize: 26px;
+    --pa-display-3-lineheight: 32px;
+    --pa-display-4-fontsize: 32px;
+    --pa-display-4-lineheight: 40px;
+    --pa-display-5-fontsize: 40px;
+    --pa-display-5-lineheight: 50px;
+    --pa-display-6-fontsize: 50px;
+    --pa-display-6-lineheight: 62px;
+    --pa-display-7-fontsize: 62px;
+    --pa-display-7-lineheight: 76px;
+    --pa-label-1-fontsize: 18px;
+    --pa-label-1-lineheight: 24px;
+    --pa-label-2-fontsize: 16px;
+    --pa-label-2-lineheight: 24px;
+    --pa-border-radius: 5px;
+    --pa-break-default: 0px;
+    --pa-break-extra-extra-small: 480px;
+    --pa-break-extra-small: 600px;
+    --pa-break-small: 720px;
+    --pa-break-medium: 960px;
+    --pa-break-large: 1200px;
+    --pa-break-extra-large: 1400px;
+    --pa-break-extra-extra-large: 1800px;
+    --pa-space-default: 16px;
+    --pa-space-small: 8px;
+    --pa-space-large: 24px;
+    --pa-space-extra-large: 32px;
+    --pa-space-half: 4px;
+    --pa-space-x1: 8px;
+    --pa-space-x2: 16px;
+    --pa-space-x3: 24px;
+    --pa-space-x4: 32px;
+    --pa-space-x5: 40px;
+    --pa-space-x6: 48px;
+    --pa-space-x7: 56px;
+    --pa-space-x8: 64px;
+    --pa-space-x9: 72px;
+    --pa-space-x10: 80px;
+    --pa-space-breakl-default: 24px;
+    --pa-space-breakl-small: 16px;
+    --pa-space-breakl-large: 32px;
+    --pa-space-breakl-extra-large: 40px;
+    --pa-width-extra-small: 800px;
+    --pa-width-small: 1280px;
+    --pa-width-medium: 1440px;
+    --pa-width-large: 1800px;
+    --pa-border-radius: 2px;
+    --pa-border-radius-large: 4px;
+    --pa-border-width: 1px;
+    --pa-border-width-large: 2px;
+    --pa-border-width-extra-large: 6px;
+    --pa-border-interactive: 1px;
+    --pa-focus-width: 3px;
+    --pa-opacity-default: 0.7;
+    --pa-opacity-light: 0.15;
+    --pa-opacity-disabled: 0.35;
+    --pa-opacity-background: 0.06;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: var(--pa-body-1-fontsize);
+    background: #eff1f7;
+    font-family: var(--pa-font-main);
+}
+
+@media(min-width:var(--pa-break-large)) {
+    .container {
+        max-width: var(--pa-width-medium)
+    }
+}
+
+.logo {
+    padding: 30px;
+}
+
+.logo img {
+    width: calc(100% - 30px);
+}
