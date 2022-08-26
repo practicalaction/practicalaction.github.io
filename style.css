@@ -1,3 +1,29 @@
+@font-face {
+    font-family: 'Druk Web';
+    src: url(https://practicalaction.org/wp-content/themes/practical-action/assets/fonts/Druk-Heavy-Web.woff2) format("woff2"), url(https://practicalaction.org/wp-content/themes/practical-action/assets/fonts/Druk-Heavy-Web.woff) format("woff");
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'GellerHeadline-Bold';
+    src: url('https://practicalaction.org/wp-content/themes/practical-action/assets/fonts/38658E_5_0.eot');
+    src: url('https://practicalaction.org/wp-content/themes/practical-action/assets/fonts/38658E_5_0.eot?#iefix') format('embedded-opentype'),
+        url('https://practicalaction.org/wp-content/themes/practical-action/assets/fonts/38658E_5_0.woff2') format('woff2'),
+        url('https://practicalaction.org/wp-content/themes/practical-action/assets/fonts/38658E_5_0.woff') format('woff'),
+        url('https://practicalaction.org/wp-content/themes/practical-action/assets/fonts/38658E_5_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GellerText-Regular';
+    src: url('https://practicalaction.org/wp-content/themes/practical-action/assets/fonts/38658E_10_0.eot');
+    src: url('https://practicalaction.org/wp-content/themes/practical-action/assets/fonts/38658E_10_0.eot?#iefix') format('embedded-opentype'),
+        url('https://practicalaction.org/wp-content/themes/practical-action/assets/fonts/38658E_10_0.woff2') format('woff2'),
+        url('https://practicalaction.org/wp-content/themes/practical-action/assets/fonts/38658E_10_0.woff') format('woff'),
+        url('https://practicalaction.org/wp-content/themes/practical-action/assets/fonts/38658E_10_0.ttf') format('truetype');
+}
+
 *:root {
     --pa-font-main: "GellerText-Regular", Serif;
     --pa-font-header: "Druk Web", sans-serif;
