@@ -11,6 +11,7 @@
     right: 0;
     z-index: 1030;
     background: #fff;
+    border-right: var(--pa-border-width) solid var(--pa-grey-dark);
 }
 
 @media (min-width:768px) {
