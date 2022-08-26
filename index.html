@@ -58,7 +58,7 @@
 <body>
     <nav class="navbar navbar-expand-md fixed-left">
         <div class="logo"><img src="images/Practical_Action_Logo_RGB_200px.png" alt="Practical Action Logo"></div>
-        <div w3-include-html="nav.html"></div>
+        <div w3-include-html="nav.html" id="nav"></div>
     </nav>
     <header>
         <div class="container">
@@ -74,23 +74,7 @@
                     consistent,
                     standardised approach.</p>
             </section>
-            <section class="block col col-2">
-                <div class="column">1231</div>
-                <div class="column">1232</div>
-                <div class="column">1233</div>
-                <div class="column">1234</div>
-                <div class="column">1235</div>
-                <div class="column">1236</div>
-            </section>
             <section class="block col col-3">
-                <div class="column">1231</div>
-                <div class="column">1232</div>
-                <div class="column">1233</div>
-                <div class="column">1234</div>
-                <div class="column">1235</div>
-                <div class="column">1236</div>
-            </section>
-            <section class="block col col-4">
                 <div class="column">1231</div>
                 <div class="column">1232</div>
                 <div class="column">1233</div>
@@ -106,10 +90,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
         integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
         crossorigin="anonymous"></script>
-    <script>includeHTML();
+    <script>
+        // includeHTML();
 
         $().ready(function () {
-            $(".metismenu").metisMenu();
+            $("#nav").load("nav.html", function () {
+                alert("Load was performed.");
+                $(".metismenu").metisMenu();
+            });
         }
 
         );
