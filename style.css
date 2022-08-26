@@ -87,6 +87,10 @@ body {
     font-family: var(--pa-font-main);
 }
 
+.container {
+    padding: var(--pa-space-x5) var(--pa-space-x3);
+}
+
 @media(min-width:var(--pa-break-large)) {
     .container {
         max-width: var(--pa-width-medium)
