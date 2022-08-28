@@ -10,60 +10,17 @@
     <script src="https://cdn.jsdelivr.net/npm/metismenu"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav_style.css">
-    <script>function includeHTML() {
-            var z,
-                i,
-                elmnt,
-                file,
-                xhttp;
-            /* Loop through a collection of all HTML elements: */
-            z = document.getElementsByTagName("*");
-
-            for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                /*search for elements with a certain atrribute:*/
-                file = elmnt.getAttribute("w3-include-html");
-
-                if (file) {
-                    /* Make an HTTP request using the attribute value as the file name: */
-                    xhttp = new XMLHttpRequest();
-
-                    xhttp.onreadystatechange = function () {
-                        if (this.readyState == 4) {
-                            if (this.status == 200) {
-                                elmnt.innerHTML = this.responseText;
-                            }
-
-                            if (this.status == 404) {
-                                elmnt.innerHTML = "Page not found.";
-                            }
-
-                            /* Remove the attribute, and call this function once more: */
-                            elmnt.removeAttribute("w3-include-html");
-                            includeHTML();
-                        }
-                    }
-
-                    xhttp.open("GET", file, true);
-                    xhttp.send();
-                    /* Exit the function: */
-                    return;
-                }
-            }
-        }
-
-    </script>
+    <title>Online Standards</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md fixed-left">
         <div class="logo"><img src="images/Practical_Action_Logo_RGB_200px.png" alt="Practical Action Logo"></div>
-        <div w3-include-html="nav.html" id="nav"></div>
+        <div id="nav"></div>
     </nav>
     <header>
         <div class="container">
-            <h1 class="font-display-7 font-col-white align-center">Online Standards<small>Practical Action</small>
-            </h1>
+            <h1 class="font-display-7 font-col-white align-center">Online Standards</h1>
         </div>
     </header>
     <div id="content">
@@ -91,11 +48,9 @@
         integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
         crossorigin="anonymous"></script>
     <script>
-        // includeHTML();
 
         $().ready(function () {
             $("#nav").load("nav.html", function () {
-                alert("Load was performed.");
                 $(".metismenu").metisMenu();
             });
         }
